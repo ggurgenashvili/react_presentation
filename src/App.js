@@ -34,7 +34,7 @@ export default class App extends Component{
     const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${API_KEY}`)
     const data = await response.json()
     // console.log(response)
-    if(response.status == 200)
+    if(response.status === 200)
     {
       this.setState({
         city:city,
@@ -94,11 +94,3 @@ export default class App extends Component{
 
 
 // https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${API_KEY}
-
-
-
-
-
-
-
-
